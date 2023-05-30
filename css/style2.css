@@ -1,0 +1,176 @@
+@media screen and (max-width: 800px) {
+    #content img{
+        visibility: hidden;
+    }
+}
+
+body{
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+
+}
+
+#main{
+    padding: 0px;
+    margin: 0px;
+}
+
+#header{
+    position: absolute;
+    background-color: #0f0e0c;
+    width: 100%;
+    height: 119px;
+    display: flex;
+}
+
+#header a{
+    height: 110px;
+    margin: auto;
+}
+
+#header img{
+    height: 110px;
+    margin: auto;
+}
+
+hr {
+    width: 100%;
+    background-color: #f3752b;
+    position:absolute;
+    height: 2px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 102px;
+  }
+
+#submenu{
+    margin-top: 119px;
+    position: absolute;
+    background-color: #0f0e0c;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#submenu hr{
+    width: 100%;
+    background-color: #f3752b;
+    position:relative;
+    height: 2px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons_nav{
+    background-color: #1E1E1E;
+    width: 305px;
+    height: 45px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    margin-inline: 35px;
+    text-align: center;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.buttons_nav button{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 27px;
+    color: #EBEBEB;
+    
+
+    width: 305px;  
+    height: 57px;
+    background-color: #1e1e1e;
+    border-radius: 30px ;
+    border: 2px solid #f3752b;
+
+}
+.buttons_nav button:hover{
+    background-color: #f3752b;
+}
+
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.conteudo img{
+    margin-left: 28%;
+    margin-top: 25%;
+    width: 100%;
+}
+
+.conteudo p{
+    border: solid #f3752b 2px;
+    margin-top: 2%;
+    margin-left: 16%;
+    text-align:justify;
+    width: 64%;
+    height: 300px;
+    padding: 20px;
+    font-size: 25px;
+    font-family: 'Inter';
+    color: #EBEBEB;
+}
+
+.conteudo button{
+    background-color: #f3742b88;
+    width: 120px;
+    height: 53px;
+    margin-left: 90%;
+    margin-top: 1%;
+    border-style: none;
+    color: #EBEBEB;
+    font-size: 15px;
+    font-family: 'Inter';
+}
+
+#footer{
+    width: 100%;
+    height: 119px;
+    background-color: #0f0e0c;
+    margin-top: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer p{
+    margin-top: 58px;
+    margin-right: 20px;
+    color: #EBEBEB;
+    font-style: italic;
+    font-family: 'Inter';
+}
+
+#footer hr{
+    width: 100%;
+    background-color: #f3752b;
+    position:absolute;
+    height: 2px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 102px;
+}
+
+.contatos a{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 35px;
+    height: 35px;
+    margin-top: 50px;
+    margin-inline-end: 8px;
+}
