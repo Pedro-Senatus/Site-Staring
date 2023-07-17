@@ -3,70 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.png"/>
+    <link rel="stylesheet" href="javascript.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    </svg>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div id="main">
+<body style="background-color: #1e1e1e;">
+    <div class="header">
+      <a href="index.html"><img class="logo"  src="img/logo1.png"></a>
+    </div><!-- Fechamento do header -->
 
-        <div id="header">
+        <div class="linha"><hr style="margin: 0rem; background-color: #f3752b;">
+        </div>
+       
+        <div class="menu">
 
-            <a href="index.html"><img class="logo"  src="img/logo1.png"></a>
-           
-        </div> <!-- Fechamento do header -->
-        <hr>
-        <div id="submenu">
+            <div class="buttons_nav"> 
+                <a href="triple-a.html"><button>TRIPLE-A</button></a>
+            </div> 
 
-               <div class="buttons_nav"> 
-                    <a href="triple-a.html"><button>TRIPLE-A</button></a>
-               </div> 
-
-               <div class="buttons_nav">
-                    <a href="indies.html"><button>INDIES</button></a>
-               </div>
-
-               <div class="buttons_nav">
-                    <a href="competitivos.html"><button>COMPETITIVOS</button></a>
-               </div>
-               <hr>
-        </div> <!-- Fechamento do submenu -->
-
-        <div id="content">
-            <div class="hollow">
-                <h1>HOLLOW KNIGHT: O jogo indie metroide vania souls like.</h1>
-                <a href="indies.html"><button class="button_indie">INDIES</button></a>
+            <div class="buttons_nav">
+                <a href="indies.html"><button>INDIES</button></a>
             </div>
-            
-            
-        </div><!-- Fechamento do content -->
 
-        <div id="content2">
+            <div class="buttons_nav">
+                <a href="competitivos.html"><button>COMPETITIVOS</button></a>
+            </div>
+        </div> <!-- Fechamento do menu -->
+
+        <div class="linha"><hr style="margin: 0rem; background-color: #f3752b;">
+        </div>
+
+        <br>
+
+        <div class="container-fluid" style="margin-top: 40px; max-width: 65%; min-width: 345px;" >
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="triple-a.html"><img src="img/eldenring2.jpg" class="d-block w-100" alt="..." style="max-height: 650px; width: 100%;"></a>
+                  <div class="carousel-caption  d-md-block">
+                    <a style="color:#EBEBEB;" href="triple-a.html"><h4 style="text-decoration-line:underline; text-decoration-color: #f3752b; ">ELDEN RING</h4></a>
+                    <h5>O jogo da FromSoftware vencedor do GOTY de 2022.<h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="indies.html"><img src="img/hollowKnight2.png" class="d-block w-100" alt="..." style="max-height: 650px; width: 100%;"></a>
+                  <div class="carousel-caption d-md-block">
+                    <a style="color:#EBEBEB;" href="indies.html"><h4 style="text-decoration-line:underline; text-decoration-color: #f3752b; ">HOLLOW KNIGHT</h4></a>
+                    <h5>O jogo indie que mistura soulslike com metroidvania.<h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="competitivos.html"><img src="img/valorant.jpg" class="d-block w-100" alt="..." style="max-height: 650px; width: 100%;"></a>
+                  <div class="carousel-caption d-md-block">
+                    <a style="color:#EBEBEB;" href="competitivos.html"><h4 style="text-decoration-line:underline; text-decoration-color: #f3752b; ">VALORANT</h4></a>
+                    <h5>O FPS da riot games.<h5>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> 
+          </div><!-- Fim do carrosel -->
+
+        <br>
+
+        <div class="content2">
             <div class="img_i">
-                <img src="img/Elden ring.png">
+              <a href="triple-a.html#metadeZ" onclick="rolarZelda()"><img src="img/zelda.png"></a>
+              <div class="titulo_imagem">
+                <span class="tag_games">TRIPLE-A</span>
+                <h5 style="text-decoration-line:underline; text-decoration-color: #f3752b; "><a href="triple-a.html#metadeZ" onclick="rolarZelda()" style="color: #EBEBEB; text-decoration-color: #f3752b;">The Legend of Zelda: Breath of the Wild</a></h5>
+              </div>
             </div>
             <div class="img_i">
-                <img src="img/Terraria.png">
+              <a href="indies.html#metadeSDV" onclick="rolarStarDewValley()"><img src="img/stardewvalley.png"></a>
+              <div class="titulo_imagem">
+                <span class="tag_games">INDIES</span>
+                <h5 style="text-decoration-line:underline; text-decoration-color: #f3752b; "><a href="indies.html#metadeSDV" onclick="rolarStarDewValley()" style="color: #EBEBEB; text-decoration-color: #f3752b;">Stardew Valley</a></h5>
+              </div>
             </div>
             <div class="img_i">
-                <img src="img/league of legends.png">
+              <a href="competitivos.html#metadeLOL" onclick="rolarLOL()"><img src="img/league of legends.png"></a>
+              <div class="titulo_imagem">
+                <span class="tag_games">COMPETITIVOS</span>
+                <h5 style="text-decoration-line:underline; text-decoration-color: #f3752b; "><a href="competitivos.html#metadeLOL" onclick="rolarLOL()" style="color: #EBEBEB; text-decoration-color: #f3752b;">Stardew Valley</a></h5>
+              </div>
             </div>
         </div><!-- Fechamento do content2 -->
-        
-        <div id="footer">
-        <hr>
+        <br><br>
+
+        <div class="content3">
+          <div></div>
+        </div>
+
+        <div class="linha"><hr style="margin: 0rem; background-color: #f3752b;"></div>
+
+        <div class="footer">
             <p><strong>Desenvolvido por: </strong>Pedro Henrique Ferreira dos Santos</p>
-            <div class="contatos"><a href="https://www.instagram.com/pedr0_0hs/"><img src="img/icons8-instagram-96.png"></a></div>
-            <div class="contatos"><a href="https://www.linkedin.com/in/pedro-santos-a28a91278/"><img src="img/icons8-linkedin-90.png"></a></div>
-            <div class="contatos"><a href="https://github.com/Pedro-Senatus"><img src="img/icons8-github-90.png"></a></div>
+            <div class="contatos"><a href="https://www.instagram.com/pedr0_0hs/" target="_blank"><img src="img/instagram.png"></a></div>
+            <div class="contatos"><a href="https://www.linkedin.com/in/pedro-santos-a28a91278/" target="_blank"><img src="img/linkedin.png"></a></div>
+            <div class="contatos"><a href="https://github.com/Pedro-Senatus" target="_blank"><img src="img/github.png"></a></div>
         </div><!-- Fechamento do footer -->
-        
-    </div> <!-- Fechamento da tag main -->
+
 </body>
 </html>
